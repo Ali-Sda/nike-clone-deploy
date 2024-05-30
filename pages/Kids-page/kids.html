@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script src="./scripts.js"></script>
+    <script src="/script/components/footer.js"></script>
+    <script src="/script/components/navbar.js"> </script>
+    <title>Men</title>
+
+</head>
+<body>
+    <section> 
+        <navbar-component></navbar-component>
+        
+        
+
+<!-- slide-text -->
+<section class="">
+    <div class="bg-[#eeeeee] underline py-2 w-screen text-black text-center font-bold hidden sm:block ">
+    <a href="#">Sale: Up to 50% off</a>
+    </div>
+ <!--Navbar Men-->
+    <div class="container flex flex-col ">
+        <div class="flex items-center mt-6">
+            <h3 class="pl-8 font-bold text-[24px] ">Kids</h3>
+                <div class=" flex-grow ml-60 w-screen font-bold text-8xs flex justify-center">
+                    <a href="#" class="mr-10">Shoes</a>
+                    <a href="#" class="mr-10">Clothing</a>
+                    <a href="#" class="mr-10">Accessories</a>
+                    <a href="#" class="mr-10">Sale</a>
+                </div>
+         </div>
+    </div>
+    
+
+    <div class="py-8  ">
+        <img src="/assets/image/nike-kids-shoes-clothing-and-accessories-nike-com Small.jpg" class=" w-full h-[800px] object-cover" alt="Full-screen image">
+        <h3 class="text-center font-[1000] text-[48px] pt-6">FLY ON AND OFF <br>THE FIELD </h3>
+        <p class=" text-center   text-[18px] m-[24px]">Cincinati star Ja'Marr Chase let us know how he keeps his edge in the season. </p>
+        <div class="flex justify-center items-center  ">
+            <button class="text-white font-[16px] font-bold bg-black border border-black px-4 py-1 rounded-full">Shop All</button>
+        </div>
+    </div>
+
+  
+    <!-- image-text-on -->
+<div>
+    <div class="flex  justify-center pt-20 ">
+        <div class=" w-[1920px] flex">
+        <div class="relative flex-1 w-full cursor-pointer">
+
+            <div>
+            <img src="/assets/image/Figurefig-1.png" class="w-full object-cover" alt="">
+            <div class="absolute bottom-0 left-0  bg-opacity-50  text-[24px]  hover:bg-opacity-50 ml-10">
+                <p class="font-bold" >Featured Footwear:Dunks</p>
+                <button class="mt-8 px-4 py-1 bg-black text-white rounded-full mb-10 font-bold  ">Shop </button>
+            </div>
+            </div>
+            
+        </div>
+        <div class="relative flex-1 cursor-pointer w-full ">
+            <img src="/assets/image/Figure.png"w-full object-cover" alt="Shop 1">
+            <div class="absolute bottom-0 left-0  bg-opacity-50 text-black text-[24px]  hover:bg-opacity-50 ml-10">
+                <p class="font-bold" >Featured Footwear:Dunks</p>
+                <button class="mt-8 px-4 py-1 bg-black text-white rounded-full mb-10 font-bold  ">Shop </button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Div 4-->
+    <div>
+        <p class="text-center pt-12 text-[24px]">Tame the Terrain</p>
+    </div>
+
+    <div class="flex  justify-center pt-20 ">
+        
+        <div class=" w-[1920px] flex">
+        
+        
+            <div class="relative flex-2 cursor-pointer w-full ">
+                <img src="/assets/image/kids1.jpg.png" class="w-full object-cover p-2" alt="Shop 1">
+                
+                <img src="/assets/image/Containerkid5.png" class="w-full object-cover p-2" alt="Shop 1">
+                
+            </div>
+    
+            <div class="relative flex-2 cursor-pointer w-full ">
+                <img src="/assets/image/Figurekid3.png" class="w-full object-cover p-2" alt="Shop 1">
+                
+                <img src="/assets/image/Containerkid4.png" class="w-full object-cover p-2" alt="Shop 1">
+                
+            </div>
+
+
+        </div> 
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- "Div 5" -->
+    <div>
+        <p class="text-center">Tame the Terrain</p>
+        <h1 class="text-center font-[1000] text-[48px]">NIKE ZEGAMA 2 </h1>
+        <div class="flex justify-center items-center  ">
+            <button class="text-white font-[16px] font-bold bg-black border border-black px-4 py-1 rounded-full">Shop</button>
+        </div>
+    </div>
+
+    <!-- Slide classics Spotlight -->
+    
+    <!-- Include Slick Slider JavaScript -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    
+
+<!-- overdflow scroll -->
+<div class=" py-2 px-24  w-full overflow-x-scroll overflow-y-hidden flex justify-center">
+    <img src="./image/o-1.jpg" alt="" class="w-full  object-cover mr-4">
+    <img src="./image/o-2.jpg" alt="" class="w-full  object-cover mr-4">
+    <img src="./image/o-3.jpg" alt="" class="w-full object-cover">
+    <img src="./image/o-1.jpg" alt="" class="w-full  object-cover mr-4">
+    <img src="./image/o-2.jpg" alt="" class="w-full  object-cover mr-4">
+    <img src="./image/o-3.jpg" alt="" class="w-full object-cover">
+</div>
+</section>
+
+</div>
+
+</body>
+<script>
+    // Initialize Slick Slider
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true, 
+            dots: false, 
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+<footer-component></footer-component>
+</html>
