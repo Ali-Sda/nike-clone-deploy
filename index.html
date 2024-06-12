@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +8,19 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-
+    <link rel="stylesheet" href="/Home-page/scripts.js">
     <link rel="stylesheet" href="/assets/styles.css">
     <script type="module" src="../script/components/footer.js"></script>
     <script type="module" src="../script/components/navbar.js"></script>
-    <script type="module" src="/script/index.js"></script>
+    <!-- add logo in website browser -->
+    <link href="https://www.nike.com/favicon.ico?v=1" rel="icon" type="image/x-icon">
     <title>Nike</title>
 </head>
 
 <body>
+<!-- hero section -->
     <section>
         <navbar-component><navbar-component>
-
-
     </section>
     <div class="bg-[#eeeeee]  text-black text-center font-bold ">
         <p>Sale: Up to 50% off</p>
@@ -54,7 +53,6 @@
         </div>
     </div>
 
-    <!-- New Images -->
     <div class="flex w-full">
         <div class="relative flex-1">
             <img src="/assets/image/shop-3.jpg" class="w-full object-cover" alt="Shop 1">
@@ -92,11 +90,11 @@
     </div>
 
 
-    <div class="mx-6 mt-8 ">
-        <h3 class=" ml-[400px] font-[1000] text-[48px]">SHOP BY CLASSICS</h3>
+    <div class="mx-6 mt-8  ">
+        <h3 class=" text-center font-[1000] text-[48px] py-8">SHOP BY CLASSICS</h3>
     </div>
 
-    <!-- Image Slider -->
+<!-- Image Slider -->
     <div class="w-full bg-white py-8">
         <div class="max-w-6xl  mx-auto">
             <div class="slick-slider ">
@@ -121,59 +119,93 @@
             </div>
         </div>
     </div>
-
-
-
-
-    <!-- Include Slick Slider JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        // Initialize Slick Slider
-        $(document).ready(function () {
-            $('.slick-slider').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true, // Set to false if you don't want navigation arrows
-                dots: false, // Set to true if you want navigation dots
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 640,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
-
-    <!-- overdflow scroll -->
+<!-- Shop by classics section -->
     <div class="mx-6 mt-8 ">
-        <h3 class=" ml-[400px] font-[1000] text-[48px]">NIKE MEMBERSHIP</h3>
+        <h3 class=" text-center font-[1000] text-[48px] py-8">NIKE MEMBERSHIP</h3>
     </div>
-    <div class=" px-60 max-w-8xl py-12 w-full overflow-2xl-scroll overflow-y-hidden flex">
-        <img src="./image/o-1.jpg" alt="" class="w-full  object-cover mr-4">
-        <img src="./image/o-2.jpg" alt="" class="w-full  object-cover mr-4">
-        <img src="./image/o-3.jpg" alt="" class="w-full object-cover">
+   <!--Nike membership section  -->
+    <div id="membershipList" class="flex gap-3 overflow-x-auto pb-10 scrollbar-hide">
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member1.png')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">The Best of Nike</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">It's Better as a Member</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member2.png')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">Member Product</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">Your Exclusive Access</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Shop</a>
+                </div>
+            </div>
+        </div>
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member3.png')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">Member Rewards</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">How We Say Thank You</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Celebrate</a>
+                </div>
+            </div>
+        </div>
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member4.jpg')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">Sports & Wellness Apps</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">Movement Where You're At</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Move</a>
+                </div>
+            </div>
+        </div>
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member5.jpg')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">Nike By You</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">Your Customization Service</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Customize</a>
+                </div>
+            </div>
+        </div>
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member6.jpg')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">SNKRS</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">Your Ultimate Sneaker Community</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="membership-item flex-none lg:w-1/3 w-3/4">
+            <div class="bg-[url('./assets/image/member1.jpg')] md:h-[600px] h-[450px] bg-no-repeat bg-cover relative rounded-lg shadow-lg">
+                <div class="absolute bottom-10 px-10 w-full text-white">
+                    <div class="flex flex-col pb-10">
+                        <h4 class="font-semibold">Member Interests</h4>
+                        <h2 class="text-2xl pr-20 font-semibold">Shop Your Way</h2>
+                    </div>
+                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300 transition" href="#">Add Interests</a>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
-
+<!-- Product detail sections -->
     <section class="flex  items-center justify-center">
         <div class="flex flex-col items-center mx-8 mt-28">
             <h3 class="text-lg font-semibold mb-6 mr-7">Feature</h3>
@@ -222,13 +254,46 @@
             </ul>
         </div>
     </section>
-
-    <section>
-
-
-    </section>
-
+<!-- Footer section -->
     <footer-component></footer-component>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
+<!-- scrip src -->
+<script>
+    // Initialize Slick Slider
+    $(document).ready(function () {
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true, // Set to false if you don't want navigation arrows
+            dots: false, // Set to true if you want navigation dots
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </html>

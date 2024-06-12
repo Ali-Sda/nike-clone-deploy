@@ -1,5 +1,8 @@
 // Dynamic component Quick Assists
+
+// Wait for the DOM to fully load before executing the script
 document.addEventListener('DOMContentLoaded', () => {
+  // Define an array of section objects, each containing a title and an array of links
   const sections = [
     {
       title: "Returns",
@@ -57,16 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
+  // Select the container element where the sections will be appended
   const container = document.getElementById('info-sections');
-
+  // Iterate through each section in the sections array
   sections.forEach(section => {
     const sectionDiv = document.createElement('div');
-
+  // Create and append the section title
     const sectionTitle = document.createElement('h3');
     sectionTitle.className = 'text-lg font-semibold mb-4';
     sectionTitle.textContent = section.title;
     sectionDiv.appendChild(sectionTitle);
-
+  // Create and append the list of links
     const linkList = document.createElement('ul');
     linkList.className = 'space-y-2';
     section.links.forEach(link => {
@@ -79,9 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
       linkList.appendChild(listItem);
     });
     sectionDiv.appendChild(linkList);
+  // Append the section div to the container
     container.appendChild(sectionDiv);
   });
 });
 
-// Dynamic component Contact us 
 

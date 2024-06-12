@@ -12,7 +12,7 @@
  
  <!-- Footer Top--> 
              <div class="flex flex-col md:flex-row w-full">
-                 <div class="flex flex-col md:flex-row flex-1 justify-between text-xs">
+                 <div class="flex flex-col md:flex-row flex-1 justify-center gap-12 text-xs">
                      <!-- Resources -->
                      <ul class="flex flex-col gap-3 font-bold text-white pt-2">
                          <li class="main">RESOURCES</li>
@@ -139,8 +139,6 @@
                      </div>
                  </div>
              </div>
- 
- <!-- bottom footer -->
  
  <!-- bottom footer -->
  <div class="footer-container items-center bg-black">

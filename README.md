@@ -13,64 +13,104 @@ Folder Structure
 The project is structured as follows:
 
 ```
-- assets/
-- Home-page/
-  - Homepage.html
-  - scripts.js
-- pages/
-  - Get help-page/
-    - gethelp.html
-  - Jordan-page/
-  - Kids-page/
-  - Men-page/
-    - Men-page.html
-  - Sign in-page/
-    - signin.html
-  - Women-page/
-- footer.html
-- header.html
-- styles.css
-- script/
-  - components/
-    - footer.js
-    - navbar.js
-  - component.js
-- .reviewboardrc
-- README.md
-- tailwind.config.js
+.vscode
+  └── settings.json
+
+assets
+  └── image
+
+Home-page
+  └── scripts.js
+
+pages
+  └── Get-help-page
+      ├── scripts
+      │   └── script.js
+      └── gethelp.html
+  └── Kids-page
+      ├── scripts
+      │   └── index.js
+      └── kids.html
+  └── Men-page
+      ├── scripts
+      │   └── Men-page.js
+      └── men.html
+
+Sign-in-page
+  ├── signin.html
+  ├── footer.html
+  ├── header.html
+  └── styles.css
+
+script
+  └── components
+      ├── footer.js
+      ├── navbar.js
+      └── index.js
+
+.reviewboardrc
+index.html
+README.md
+tailwind.config.js
 
 ```
-
-
 
 Description of Folders and Files
 
 
-pages/
+Sure, here's a brief description of each folder and file:
 
-Stores all the source code for each web page.
-Each source code file is placed inside a subfolder named after the corresponding web page.
-The source code for each web page is named index.html to keep navigation concise.
-Each subfolder might contain a components folder if necessary.
+Root Level
+- .vscode/
+  - settings.json**: VS Code editor settings.
 
+- assets/
+  - image/: Stores images.
 
+- Home-page/
+  - cripts.js: JavaScript for the home page.
 
-script/
+pages
+- Get-help-page/
+  - scripts/
+    - script.js: JavaScript for "Get Help" page.
+  - gethelp.html: HTML for "Get Help" page.
 
-Contains all the code related to global components and other shared behaviors.
-The components folder stores the actual component files.
-All components are exported using index.html.
+- Kids-page/
+  - scripts/
+    - index.js: JavaScript for "Kids" page.
+  - kids.html: HTML for "Kids" page.
+
+- Men-page/
+  - scripts/
+    - Men-page.js: JavaScript for "Men" page.
+  - men.html: HTML for "Men" page.
+
+- Sign-in-page/
+- signin.html: HTML for sign-in page.
+- footer.html: HTML for footer section.
+- header.html: HTML for header section.
+- styles.css: CSS for sign-in page.
+
+- script
+- components/
+  - footer.js: JavaScript for footer component.
+  - navbar.js: JavaScript for navbar component.
+  - index.js: Main entry point for components.
+
+- .reviewboardrc: Review Board configuration file.
+- index.html: Main HTML entry point.
+- README.md: Project documentation.
+- tailwind.config.js: Tailwind CSS configuration.
 
 
 Pages Included
 
-[Feature] Home Screen
-[Feature] Men page
-[Feature] sign in 
-[Feature] Help
-[Feature] kids
-
-
+[Feature] Home Screen pages
+[Feature] Men pages
+[Feature] sign in pages
+[Feature] Help pages
+[Feature] kids pages
 
 
 Usage
@@ -78,5 +118,4 @@ To start working on this project, follow these steps:
 
 Clone the repository:
 
-
-   git clone https://git.clp.kr/anbschool/2nd/alphabeez/bet-sela/nike-web-clone.git
+git clone 

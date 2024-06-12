@@ -10,7 +10,7 @@ class navbar extends HTMLElement{
         <header>
         <section> 
             <nav class="bg-[#eeeeee] shadow-lg">
-                <div class="m-0 mx-auto px-16 hidden sm:block ">
+                <div class="m-0 mx-auto px-16 hidden md:block ">
                     <div class="flex w-full justify-between h-16">
                         <!-- Left side of navbar -->
                         <div class="flex-shrink-0 flex items-center">
@@ -35,13 +35,12 @@ class navbar extends HTMLElement{
                                 <a href="#" class="text-black hover:text-gray-300">Join Us 
                                     <a href="#">|</a></a>
                                 <a href="/pages/Sign in-page/signin.html" class="text-black hover:text-gray-300">Sign In </a>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <nav class="w-screen bg-white shadow-lg ">
+            <nav class="w-screen bg-white shadow-lg hidden md:block  ">
                 <div class="w-screen flex h-16 item-center justify-around mt-4 ">
                     <!-- Left side of navbar -->
             
@@ -50,68 +49,37 @@ class navbar extends HTMLElement{
                         <img src="/assets/image/nike.png" alt="Logo 1" class="h-8">
                     </a>
                         
-                    <div class="flex mr-20  ">    <!-- Dropdown Menu 1 -->
+                    <div class="flex mr-20  ">   
                         <div class="relative mr-2   ">
                             <button class="text-black font-bold px-8 py-2 rounded-md">New & Feature</button>
-                            <ul class="absolute hidden mt-2 py-1 rounded-md shadow-md w-full bg-white"> 
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 1</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 2</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 3</li>
-                            </ul>
                         </div>
-                        <!-- Dropdown Menu 2 -->
+                        
                         <div class="relative mr-2">
-                        <a href="/pages/Men-page/Men-page-.html" class="text-black font-bold px-4 py-2 rounded-md">
+                        <a href="/pages/Men-page/Men-page.html" class="text-black font-bold px-4 py-2 rounded-md">
                             <button  class="text-black font-bold px-4 py-2 rounded-md">Men</button>
                         </a>
                             
-                            <ul class="absolute hidden mt-2 py-1 rounded-md shadow-md w-full bg-white">
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 5777881</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 2</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 3</li>
-                            </ul>
                         </div>
-                        <!-- Dropdown Menu 3 -->
+                        
                         <div class="relative mr-2">
                         <a href="#" class="text-black font-bold px-4 py-2 rounded-md">
                         <button  class="text-black font-bold px-4 py-2 rounded-md">Women</button>
                     </a>    
                         
-                            <ul class="absolute hidden mt-2 py-1 rounded-md shadow-md w-full bg-white"> 
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 1</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 2</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 3</li>
-                            </ul>
                         </div>
-                        <!-- Dropdown Menu 4 -->
+                        
                         <div class="relative mr-2">
                         <a href="/pages/Kids-page/kids.html" class="text-black font-bold px-4 py-2 rounded-md">
                         <button  class="text-black font-bold px-4 py-2 rounded-md">Kid</button>
                     </a>                              
-                            <ul class="absolute hidden mt-2 py-1 rounded-md shadow-md w-full bg-white"> 
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 1</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 2</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 3</li>
-                            </ul>
+                            
                         </div>
-                        <!-- Dropdown Menu 5 -->
+                        
                         <div class="relative mr-2">
                             <button class="text-black font-bold px-4 py-2 rounded-md">Sale</button>
-                            <ul class="absolute hidden mt-2 py-1 rounded-md shadow-md w-full bg-white"> 
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 1</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 2</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 3</li>
-                            </ul>
                         </div>
-                        <!-- Dropdown Menu 6 -->
-                        <div class="relative mr-2">
-                            <button class="text-black font-bold px-4 py-2 rounded-md">Jordan</button>
-                            <ul class="absolute hidden mt-2 py-1 rounded-md shadow-md w-full bg-white"> 
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 1</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 2</li>
-                                <li class="hover:bg-gray-100 px-4 py-2">Item 3</li>
-                            </ul>
-                        </div>
+                        
+                        
                     </div>
                     <!-- Right side of navbar -->
                     <div class="flex item-center justify-center">
@@ -135,5 +103,4 @@ class navbar extends HTMLElement{
     `
     }
 }
-
 customElements.define("navbar-component", navbar);
